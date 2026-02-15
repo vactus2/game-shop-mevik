@@ -1,0 +1,263 @@
+
+
+
+
+
+
+
+
+header{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 135px;
+}
+
+.Navigation{
+    font-family: 'Overpass';
+    text-decoration: none;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+    font-size: 24px;
+}
+
+.Nav-logo{
+    font-family: 'Overpass';
+    text-decoration: none;
+    font-size: 120px;
+}
+
+.link{
+    font-size:30px;
+    text-decoration: none;
+    padding: 5px;
+    color: #491001;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.first_div {
+    background-image: url(img/landing.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: 100px 100px;
+}
+
+main {
+    background-color: #EAEAEA;
+}
+
+.first {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.landing_h {
+    font-family: 'overpass';
+    font-size:70px;
+    font-weight: bold;
+    width: 500px;
+    text-align: right;
+    color: white;
+
+}
+
+.landing_text1{
+    font-family: 'overpass';
+    position: relative;
+    color: white;
+}
+
+.landing_text1::after{
+    content: '';
+    width: 3px;
+    height: 80px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    right: -15px;
+}
+
+.landing_text2{
+    font-family: 'overpass';
+    color: white;
+}
+
+.landing_text1_1{
+    font-size: 40px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.landing_text1_2{
+    font-size: 20px;
+    margin: 0;
+}
+
+.landing_text2_1{
+    font-size: 40px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.landing_text2_2{
+    font-size: 20px;
+    margin: 0;
+}
+
+.second_div{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.third_div{
+    display: flex;
+    gap: 30px;
+}
+
+
+.catalog {
+    margin-top: 26px;
+    background-color: #D3D3D3;
+    padding-bottom: 50px;
+}
+
+.catalog__title {
+    font-family: 'overpass';
+    font-size: 46px;
+    color: black;
+    text-align: center;
+    margin: 18px;
+    font-weight: 800;
+}
+
+.catalog__item-title {
+    font-family: 'overpass';
+    font-size: 36px;
+    color: black;
+    margin-left: 30px;
+    font-weight: 700;
+}
+
+.catalog__item-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.product {
+    width: 200px;
+    height: 300px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 20px grey;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 10px;
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.1);
+}
+
+.product img {
+    max-width: 90%;
+    max-height: 70%;
+    object-fit: contain;
+}
+
+.product__price {
+    color: black;
+    background: #f4d06f;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px 30px;
+    text-align: center;
+}
+
+.custom-footer {
+  background-color: #ffffff; /* Білий фон */
+  padding: 20px 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-top: 1px solid #eee;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: flex-start; /* Розташування як на фото */
+  gap: 100px; /* Відстань між колонками */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Стилі для посилань та тексту */
+.footer-section a {
+  text-decoration: none;
+  color: #8da24a; /* Оливковий колір з фото */
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Іконки соцмереж */
+.social-links i {
+  width: 20px;
+  text-align: center;
+}
+
+/* Права частина з телефонами */
+.phone-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.phone-item a {
+  font-style: italic; /* Курсив як на фото */
+  font-weight: bold;
+}
+
+/* Зелене коло навколо іконки слухавки */
+.icon-circle {
+  background-color: #8da24a;
+  color: white;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+/* Адаптація для мобільних пристроїв */
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
